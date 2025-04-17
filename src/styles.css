@@ -1,0 +1,40 @@
+.gridContainer{
+    display: grid;
+        grid-template-columns: 10% 25% 1fr;
+        grid-column-gap: 25px;
+        grid-template-areas: 'subImgs mainImgs prdctData';
+}
+
+.prdctData{
+    grid-area: prdctData;
+}
+.mainImgs{
+    grid-area: mainImgs;
+}
+.subImgs{
+    grid-area: subImgs;
+}
+@media screen and (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 25% 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 'subImgs mainImgs'
+                             'prdctData prdctData';
+    }
+    .gridContainer > div {
+        margin-bottom: 20px;
+    }
+    
+}
+
+.headerBar{
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    margin-bottom: 20px;
+    padding: 10px;
+}
