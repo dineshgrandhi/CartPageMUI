@@ -1,2 +1,2 @@
 # CartPageMUI
-A Product detail with Cart functionality page built with MUI Library
+A Product detail page with Cart functionality page built with MUI Library
